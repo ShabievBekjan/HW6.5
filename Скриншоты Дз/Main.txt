@@ -1,0 +1,19 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+
+        String[] commands = {"Сидеть", "Лежать"};
+        Shelter romashka = new Shelter("Ромашка",
+                "Чуй 1");
+        Dog dog = new Dog("Чарли", "Алабай", commands,
+                ColorEnum.WHITE, romashka);
+        System.out.println(dog.getInfo());
+        dog.makeVoice();
+        dog.makeVoice("Гув гув");
+
+
+    }
+}
